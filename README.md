@@ -1,4 +1,4 @@
-# ShellHacks2018
+# Shell Hacks 2018
 
 ## We are on a mission to remove emissions
 
