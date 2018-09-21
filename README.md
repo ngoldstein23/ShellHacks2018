@@ -2,13 +2,13 @@
 
 ## We are on a mission to remove emissions
 
-### Tech stack: Python, Azure, Wix, Javascript
+### Tech stack: Python, Azure, REST
 
 ### What it does
 GreenGrocer helps users reduce their negative environmental impacts by analyzing their receipts and making them aware of the ecological impact of their groceries.
 
 ### How we built it
-The GreenGrocer website is hosted on Wix which communicates with our backend and Azure via REST endpoints. After a user uploads a photo of their receipt, GreenGrocer utilizes Azure's Computer Vision service to perform image to text analysis of receipts. This text is then matched to a database to look for high impact keywords. Information is retrieved and displayed to the user to help them make more informed decisions based on their purchases.
+The GreenGrocer tool is accessible using REST endpoints. The URL containing the image of a receipt can be sent via POST request. After, GreenGrocer utilizes Azure's Computer Vision service to perform image to text analysis of receipts. This text is then matched to a database to look for high impact keywords. A dictionary of these high impact items is returned. 
 
 
 ### What's next for GreenGrocer
