@@ -12,21 +12,25 @@ class FoodGroup(object):
         self.suggestion = suggestion
 
 def parseJson(jsonObj):
+	#array that will be compared to dictionary
     textarray = []
     json_object = jsonObj
     json_body = json_object[0]['lines']
     body_length = len(json_body)
+    #parses through first "array"
     for line_num in range(0,body_length):
         words = json_body[line_num]
         words_length = len(words)
         word_list = words['words']
         word_list_length =len(word_list)
+        #parses within every inner array until all 'texts' are taken
         for word in range(0,word_list_length):         
             textarray.insert(word, word_list[word]['text'])
             
     return textarray
 
 def fillDictionary(dict):
+	#dictionary of high impact items that can be included in receipts
     beef = FoodGroup("BEEF", "", "")
     beef.impact = "Livestock farming produces from 20% to 50% of all man-made greenhouse gas emissions."
     beef.suggestion = "Some other forms of protein are just as good! Such as lentils, tofu, and hummus!"
