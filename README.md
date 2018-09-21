@@ -1,4 +1,4 @@
-# Shell Hacks 2018
+# GreenGrocer - Shell Hacks 2018
 
 ## We are on a mission to remove emissions
 
